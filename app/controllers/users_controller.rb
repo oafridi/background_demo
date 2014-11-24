@@ -29,11 +29,9 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         
-        UserMailer.welcome_email(@user).deliver_now
-
         # 15.times do
         #   UserMailer.delay.welcome_email(@user)
-        # UserMailer.welcome_email(@user).deliver
+          UserMailer.welcome_email(@user).deliver
         # end
 
         format.html { redirect_to @user, notice: 'User was successfully created.' }

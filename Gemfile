@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 gem 'sidekiq'
 gem 'redis'
+gem 'sinatra'
+gem 'thin'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
